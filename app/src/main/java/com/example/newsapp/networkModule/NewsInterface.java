@@ -13,7 +13,7 @@ public interface NewsInterface {
     //https://newsapi.org/v2/top-headlines?country=in&apiKey=API_KEY
     //https://newsapi.org/v2/everything?q=apple&from=2021-09-23&to=2021-09-23&sortBy=popularity&apiKey=API_KEY
 
-    String API_KEY = "9c7ffe3c66d29550a5a3336dd"; //Need to replace with your API Key
+    String API_KEY = "9c7ffe3c66d29550aa3336dd"; //Need to replace with your API Key
     @GET(value = "v2/top-headlines?apiKey=" + API_KEY)
     Call<News> getHeadlines(@Query(value = "country") String country);
 
